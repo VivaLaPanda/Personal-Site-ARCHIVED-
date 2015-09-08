@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html ng-app="PersonalApp">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controller.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" id="contact-form-7-css" href="css/style.css" type="text/css" media="all">
+        <title></title>
+    </head>
+    <body>
+        <div class="preloader" style="opacity: 0; display: none;">
+            <div id="preloader-inner">
+                <div class="preload"></div>
+            </div>
+        </div>
+        <div class="page">
+        <header id="masthead" class="site-header" role="banner" style="background-position: 50% 0px;">
+
+            <div class="top-bar clearfix ">
+                <nav class="social-navigation clearfix">
+                    <div class="menu-social-container"><ul id="menu-social" class="menu clearfix"><li id="menu-item-163" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-163" style="width: 20%;"><a href="https://www.facebook.com/marko.ritachka" target="_blank"><span class="screen-reader-text">Facebook</span></a></li>
+                            <li id="menu-item-164" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-164" style="width: 20%;"><a href="http://youtube.com/c/MarkoRitachka" target="_blank"><span class="screen-reader-text">YouTube</span></a></li>
+                            <li id="menu-item-165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-165" style="width: 20%;"><a href="https://twitter.com/Okramarko" target="_blank"><span class="screen-reader-text">Twitter</span></a></li>
+                            <li id="menu-item-166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-166" style="width: 20%;"><a href="https://plus.google.com/+MarkoRitachka/" target="_blank"><span class="screen-reader-text">Google+</span></a></li>
+                            <li id="menu-item-167" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-167" style="width: 20%;"><a href="https://www.linkedin.com/profile/view?id=AAMAABHWdBgBct4KlL8kjh63xAUl3LYTQVX0900&amp;trk=hp-identity-name" target="_blank"><span class="screen-reader-text">LinkedIn</span></a></li>
+                        </ul></div>			</nav>
+
+
+                <div class="sidebar-toggle">
+                    <i class="fa fa-plus"></i>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="localhost:8000" rel="home">Adrian Smith</a></h1><h2 class="site-description">Student - Programmer</h2>			</div><!-- .site-branding -->
+            </div>
+
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <div class="menu clearfix">
+                    <ul>
+                        <li class="page_item page-item-58"><a href="#blog">Blog</a></li>
+                        <li class="page_item page-item-58"><a href="#projects">Projects</a></li>
+                        <li class="page_item page-item-64"><a href="#about">About</a></li>
+                        <li class="page_item page-item-64"><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav><!-- #site-navigation -->
+            <nav class="mobile-nav"><div class="slicknav_menu"><a href="#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt"><i class="fa fa-bars"></i></span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><div class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;"><ul><li class="page_item page-item-58"><a href="http://www.markoritachka.com/anim-e/" role="menuitem">Anim.e</a></li><li class="page_item page-item-64"><a href="http://www.markoritachka.com/donate/" role="menuitem">Donate</a></li><li class="page_item page-item-140"><a href="http://www.markoritachka.com/mesonox/" role="menuitem">Mesonox</a></li><li class="page_item page-item-105"><a href="http://markoritachka.com/sandbox" role="menuitem">Sandbox</a></li><li class="page_item page-item-146"><a href="http://prezi.com/t9yi43xgdxsa/?utm_campaign=share&amp;utm_medium=copy" role="menuitem">Sierra</a></li><li class="page_item page-item-144"><a href="https://docs.google.com/presentation/d/12LdNxvJFAyayEhhbsrwZvvHki7uduTbB5wMC5ZJXXUA/edit?usp=sharing" role="menuitem">Sophia</a></li><li class="page_item page-item-101"><a href="http://www.markoritachka.com/tanner/" role="menuitem">Tanner!</a></li><li class="page_item page-item-142"><a href="http://104.236.162.97/" role="menuitem">Yen</a></li><li class="page_item page-item-7"><a href="http://www.markoritachka.com/home/" role="menuitem">Home</a></li><li class="page_item page-item-5"><a href="http://www.markoritachka.com/location/" role="menuitem">Location</a></li><li class="page_item page-item-4"><a href="http://www.markoritachka.com/contact/" role="menuitem">Contact Me</a></li></ul></div></div></nav>
+
+        </header>
+        
+        <div id="content" class="site-content clearfix">
+            <div ng-view></div>
+        </div>
+        </div>
+    </body>
+</html>
