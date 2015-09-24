@@ -1,17 +1,13 @@
 /*
-Theme Name: Oria
-Theme URI: http://flyfreemedia.com/themes/oria
-Author: FlyFreeMedia
-Author URI: http://flyfreemedia.com
-Description: Oria is a responsive masonry theme that lets you tell your stories in a clean and modern environment. Some of the features are: parallax header image, social menu, custom colors, easy access to all Google Fonts, a built-in featured posts carousel. A full demo is available here: http://demo.flyfreemedia.com/oria
-Version: 1.01
+Theme Name: Angular Materials
+Author: Adrian Smith
+Author URI: adrianrsmith.com
+Description: A style designed around Masorny, AngularJS, and the Material Design language.
+Version: .01
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: oria
-Tags: light, fluid-layout, responsive-layout, custom-colors, custom-background, custom-menu, custom-header, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Angular Materials is based on much of the style used in Oria: flyfreemedia.com, a GPL licensed Wordpress theme
 
 Oria is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -337,7 +333,7 @@ a:active {
 }
 .slicknav_nav a:hover,
 .slicknav_nav a:active,
-.slicknav_nav a:focus, {
+.slicknav_nav a:focus {
 	text-decoration: none;
 }
 .slicknav_nav li {
@@ -561,6 +557,23 @@ a:active {
 --------------------------------------------------------------*/
 .sticky {
 	display: block;
+}
+
+.blog-entry-grid {
+}
+.blog-gutter-sizer {
+  width: 15%;
+}
+.blog-grid-sizer,
+.blog-grid-item { 
+    width: 300px; }
+
+.blog-grid-item {
+    float: left;
+    background: #FFF;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    margin-bottom: 30px;
 }
 
 .hentry {
@@ -1130,7 +1143,7 @@ Slider
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
+	-user-select: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 

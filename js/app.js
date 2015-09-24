@@ -1,31 +1,29 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 var PersonalApp = angular.module('PersonalApp', [
   'ngRoute',
-  'controller'
+  'MasterCtrl'
 ]);
 
 PersonalApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/blog', {
-        templateUrl: 'partials/blog.html'
+        templateUrl: 'partials/blog.html',
+        MasterCtrl: 'MasterCtrl'
         
       }).
       when('/about', {
-        templateUrl: 'partials/about.html'
+        templateUrl: 'partials/about.html',
+        MasterCtrl: 'MasterCtrl'
         
       }).
       when('/projects', {
-        templateUrl: 'partials/about.html'
+        templateUrl: 'partials/about.html',
+        MasterCtrl: 'MasterCtrl'
         
       }).
       when('/contact', {
-        templateUrl: 'partials/about.html'
+        templateUrl: 'partials/about.html',
+        MasterCtrl: 'MasterCtrl'
         
       }).
       otherwise({

@@ -1,1 +1,25 @@
-blogtest
+<div ng-controller="MasterCtrl" id="primary" class="content-area fullwidth">
+    <main id="main" class="site-main" role="main">
+        <div class="blog-entry-grid">
+            <div class="blog-grid-sizer"></div>
+            <div class="blog-gutter-sizer"></div>
+            <article ng-repeat="posts in bposts" class="blog-grid-item">
+                <header class="entry-header blog-entry-header">
+
+                    <div class="entry-data">
+                        <span class="posted-on">
+                            <a ng-href="/../BlogPosts/{{posts.ID}}.html" rel="bookmark">
+                                <time class="entry-date published updated" datetime="2015-08-20T02:48:02+00:00">{{posts.ID}}</time>
+                            </a>
+                        </span>
+
+                    </div>
+                    <h1 class="entry-title"><a ng-href="/../BlogPosts/{{posts.ID}}.html" rel="bookmark">{{posts.Title}}</a></h1>	</header><!-- .entry-header -->
+
+
+                <div class="entry-content">
+                    <p>{{posts.Summary}}<a class="read-more" ng-href="/../BlogPosts/{{posts.ID}}.html">Continue reading</a></p>
+                </div><!-- .entry-content -->
+            </article><!-- #post-## -->
+        </div>
+</div>
