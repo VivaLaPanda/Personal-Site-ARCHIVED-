@@ -5,10 +5,14 @@
  */
 var MasterCtrl = angular.module('MasterCtrl', []);
 
-MasterCtrl.controller('MasterCtrl', ['$scope', '$http',
-    function ($scope, $http) {
-        $http.get('../BlogPosts/posts.json').then(function(response) {
+MasterCtrl.controller('MasterCtrl', ['$scope', '$http', '$route',
+    function ($scope, $http, $route) {
+        $http.get('BlogPosts/posts.json').then(function (response) {
             $scope.bposts = response.data.posts;
 
-        });
-    }]);
+
+        }
+        );
+
+    }
+]);

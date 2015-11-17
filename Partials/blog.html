@@ -1,25 +1,29 @@
-<div ng-controller="MasterCtrl" id="primary" class="content-area fullwidth">
-    <main id="main" class="site-main" role="main">
-        <div class="blog-entry-grid">
-            <div class="blog-grid-sizer"></div>
-            <div class="blog-gutter-sizer"></div>
-            <article ng-repeat="posts in bposts" class="blog-grid-item">
-                <header class="entry-header blog-entry-header">
-
-                    <div class="entry-data">
-                        <span class="posted-on">
-                            <a ng-href="/../BlogPosts/{{posts.ID}}.html" rel="bookmark">
-                                <time class="entry-date published updated" datetime="2015-08-20T02:48:02+00:00">{{posts.ID}}</time>
-                            </a>
-                        </span>
-
+<div ng-controller="MasterCtrl" id="primary">
+    <div class="mdl-grid">
+        <div ng-repeat="posts in bposts" class="mdl-cell mdl-cell--4-col">
+            <div class="blog-card-wide mdl-card mdl-shadow--4dp">
+                <div class="mdl-card__title mdl-card--expand" style="background: url('{{posts.Thumb}}') center / cover;">
+                    <div class="mdl-card__title-text">
+                        <h4>
+                            <a ng-href="#/blog_fullpage/{{posts.ID}}" rel="bookmark">{{posts.Title}}</a>
+                        </h4>
                     </div>
-                    <h1 class="entry-title"><a ng-href="/../BlogPosts/{{posts.ID}}.html" rel="bookmark">{{posts.Title}}</a></h1>	</header><!-- .entry-header -->
+                </div><!-- .entry-header -->
 
 
-                <div class="entry-content">
-                    <p>{{posts.Summary}}<a class="read-more" ng-href="/../BlogPosts/{{posts.ID}}.html">Continue reading</a></p>
-                </div><!-- .entry-content -->
-            </article><!-- #post-## -->
+                <div class="mdl-card__supporting-text">
+                    <h6>{{posts.Date}}</h6>
+                    <p>{{posts.Summary}}</p>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a ng-href="#/blog_fullpage/{{posts.ID}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Continue
+                    </a>
+                    <div class="mdl-layout-spacer"></div>
+                    <i class="material-icons" style="color: #F90">description</i>
+                </div>
+                <!-- .entry-content -->
+            </div><!-- #post-## -->
         </div>
+    </div>
 </div>

@@ -4,29 +4,24 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <script src="//cdn.ckeditor.com/4.5.3/standard/ckeditor.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    </head>
-    <body>
-            
-        <form method="post" action="writetofile.php" style="text-align:center">
+<div ng-controller="MasterCtrl" id="primary">
+    <div class="blog-wrapper">
+        <form id="bpost_form" class="dropzone" method="post" action="/admin/writetofile.php" style="text-align:center" enctype="multipart/form-data">
             <input type="text" name="newpost_title"/>
             <br>
+            <input type="file" name="img_upload" id="fileToUpload">
+            <br>
             <textarea name="newpost_body" id="newpost" rows="10" cols="80">
-                This is my textarea to be replaced with CKEditor.
+                Lorum Ipsum is just something we say to keep ourselves warm at night.
             </textarea>
             <script>
                 // Replace the <textarea id="editor1"> with a CKEditor
                 // instance, using default configuration.
-                CKEDITOR.replace( 'newpost' );
+                CKEDITOR.replace('newpost');
             </script>
             <input type="submit"
-                   value="Save""/>
-        </form>\
-    </body>
-</html>
+                   name="submit"
+                   value="Save"/>
+        </form>
+    </div>
+</div>
