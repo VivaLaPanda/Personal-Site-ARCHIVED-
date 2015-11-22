@@ -1,5 +1,5 @@
 <?php
-
+require (__DIR__.'/../secure/http_auth.php');
 if (isset($_POST["submit"])) {
     include_once("class.UploadFileEngine.php");
 
@@ -65,7 +65,7 @@ if (isset($_POST["submit"])) {
 # array.json => {"a":1,"b":2,"c":3,"d":4,"e":5}
 
 
-        header('Location: #/blog');
+        header('Location: ../#/blog');
     } else {
         echo implode('<br />', $uploader->errors);
     }

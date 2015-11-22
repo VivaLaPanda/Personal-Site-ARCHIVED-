@@ -13,7 +13,7 @@ PersonalApp.config(['$routeProvider',
 
                 }).
                 when('/admin', {
-                    templateUrl: 'admin/NewPost.html',
+                    templateUrl: 'admin/NewPost.php',
                     MasterCtrl: 'MasterCtrl',
                     activetab: 'admin'
 

@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+require (__DIR__.'/../secure/http_auth.php');
+?>
 <div ng-controller="MasterCtrl" id="primary">
     <div class="blog-wrapper">
         <form id="bpost_form" class="dropzone" method="post" action="/admin/writetofile.php" style="text-align:center" enctype="multipart/form-data">
@@ -25,3 +22,4 @@ and open the template in the editor.
         </form>
     </div>
 </div>
+
