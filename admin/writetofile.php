@@ -4,7 +4,7 @@ if (isset($_POST["submit"])) {
     include_once("class.UploadFileEngine.php");
 
 
-    $destination = "../BlogPosts/post_images/";
+    $destination = "../blogposts/post_images/";
     $uploader = new UploadFileEngine();
     $success = $uploader->setDestination($destination)
             ->uploadFile();
@@ -22,7 +22,7 @@ if (isset($_POST["submit"])) {
         $postsummary = preg_replace("/&#39;/", "'", $postsummary);
 
 #Uploading post text
-        $filepath = dirname(__FILE__) . "/../BlogPosts/";
+        $filepath = dirname(__FILE__) . "/../blogposts/";
         $fileid = time();
         $filename = $filepath . $fileid . ".html";
         $var_str = var_export($postbody, true);
@@ -48,7 +48,7 @@ if (isset($_POST["submit"])) {
 
 
         file_put_contents($filename, $var);
-        $posts = json_decode(file_get_contents(dirname(__FILE__) . "/../BlogPosts/posts.json"), true);
+        $posts = json_decode(file_get_contents(dirname(__FILE__) . "/../blogposts/posts.json"), true);
 #$posts->append($fileid);
         $filedata = [
             "ID" => $fileid,
@@ -61,7 +61,7 @@ if (isset($_POST["submit"])) {
         array_push($posts['posts'], $filedata);
 
         $arr1 = $posts;
-        file_put_contents(dirname(__FILE__) . "/../BlogPosts/posts.json", json_encode($arr1));
+        file_put_contents(dirname(__FILE__) . "/../blogposts/posts.json", json_encode($arr1));
 # array.json => {"a":1,"b":2,"c":3,"d":4,"e":5}
 
 

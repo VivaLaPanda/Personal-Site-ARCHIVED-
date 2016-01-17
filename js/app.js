@@ -19,20 +19,19 @@ PersonalApp.config(['$routeProvider',
 
                 }).
                 when('/projects', {
-                    templateUrl: 'partials/about.html',
+                    templateUrl: 'partials/project.html',
                     MasterCtrl: 'MasterCtrl',
                     activetab: 'projects'
 
                 }).
-                when('/contact', {
+                when('/about', {
                     templateUrl: 'partials/about.html',
                     MasterCtrl: 'MasterCtrl',
-                    activetab: 'contact'
+                    activetab: 'about'
 
                 }).
-                when('/blog_fullpage/:bpost', {
-//                    templateUrl: function(params){ return '/BlogPosts/' + params.bpost + '.html'; },
-                    templateUrl: '/BlogPosts/1447742276.html',
+                when('/blog_fullpage/:bpost*', {
+                    templateUrl: function(params){ return '/blogposts/' + params.bpost + '.html'; },
                     MasterCtrl: 'MasterCtrl',
                     activetab: 'blog'
 

@@ -1,19 +1,3 @@
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 @font-face {
     font-family: "And Black";
     src: url("myfont-webfont.eot?#iefix") format('embedded-opentype'),
@@ -33,8 +17,8 @@
 
 .wide {
     width:100%;
-    height:200px;
-    background-image:url('/header.png/');
+    height:150px;
+    background-image:url('/header.png');
     background-size:cover;
     -moz-box-shadow: 0 0 6px black;
     -webkit-box-shadow: 0 0 6px black;
@@ -42,9 +26,10 @@
 }
 
 
-
+.header{
+    height:200px;
+}
 body {
-    margin: 0;
     background-color: #E6E7E8;
 }
 
@@ -95,10 +80,16 @@ a img{
 
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: rgb(255,171,64);
+}
+
+
 .logo {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: normal;
+    text-align: center;
 }
 
 .subtitle {
@@ -111,31 +102,22 @@ a img{
 
 }
 /*Blog Styles*/
-.body{
-    padding-top: 245px;
-    min-height: 700px;
-}
 
 .mdl-cell {
     box-sizing: border-box;
-    height: 200px;
+    height: 100%;
     padding-top: 5px;
     color: white;
 }
 
 
-.mdl-grid:first-of-type .mdl-cell {
-    height: 400px;
-}
-
 .blog-card-wide.mdl-card {
-    width: 370px;
-    height: 375px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 .blog-card-wide > .mdl-card__title {
     color: #fff;
-    height: 150px;
     background: #222 center / cover;
     align-items: flex-start;
     margin-top: 0;
@@ -152,9 +134,11 @@ a img{
 
 .mdl-card__supporting-text {
     padding-top: 0px;
-    height:140px;
+    height:40%
 }
 
+
+/*Blog fullpage CSS */
 .blog-wrapper{
     background-color:white;
     margin: 0 auto;
@@ -173,6 +157,7 @@ a img{
 }
 
 .header-image{
+    max-height: 300px;
     max-width: 70%; /* you can use % */
     height: auto;
     -moz-box-shadow: 0 0 3px black;
@@ -183,4 +168,11 @@ a img{
 .blog-body {
     width: 70%;
     margin: auto;
+    text-align: left;
+}
+
+.contact-details {
+    list-style-type: none;
+    padding: 0;
+    
 }

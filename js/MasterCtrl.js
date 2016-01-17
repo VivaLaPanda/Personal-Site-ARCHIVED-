@@ -7,7 +7,7 @@ var MasterCtrl = angular.module('MasterCtrl', []);
 
 MasterCtrl.controller('MasterCtrl', ['$scope', '$http', '$route',
     function ($scope, $http, $route) {
-        $http.get('BlogPosts/posts.json').then(function (response) {
+        $http.get('blogposts/posts.json').then(function (response) {
             $scope.bposts = response.data.posts;
 
 

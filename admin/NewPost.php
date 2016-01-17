@@ -1,3 +1,4 @@
+<?php echo exec('whoami'); ?>
 <?php
 require (__DIR__.'/../secure/http_auth.php');
 ?>
